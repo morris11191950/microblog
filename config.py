@@ -13,4 +13,7 @@ class Config(object):
     MAIL_PASSWORD   = os.environ.get('MAIL_PASSWORD')
     ADMINS          = ['morris11191950@gmail.com']
     LANGUAGES       = ['en', 'es']
+    # Need to sign up on microsft Azure to use translations, I have
+    #       not done this. See Grinberg Chapter 14.
+    MS_TRANSLATOR_KEY = os.environ.get('MS_TRANSLATOR_KEY')
     POSTS_PER_PAGE  = 25

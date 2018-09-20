@@ -1,2 +1,6 @@
-venv
-venv_mb
+# Ignore all venv files
+venv/*
+venv_mb/*
+
+# Database
+app.db
