@@ -1,8 +1,8 @@
 import os
-#from dotenv import load_dotenv
+from dotenv import load_dotenv
 
 basedir = os.path.abspath(os.path.dirname(__file__))
-#load_dotenv(os.path.join(basedir, '.env'))
+load_dotenv(os.path.join(basedir, '.env'))
 
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'you-will-never-guess'
@@ -19,4 +19,5 @@ class Config(object):
     # Need to sign up on microsft Azure to use translations, I have
     #       not done this. See Grinberg Chapter 14.
     MS_TRANSLATOR_KEY = os.environ.get('MS_TRANSLATOR_KEY')
+    ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
     POSTS_PER_PAGE  = 25
